@@ -43,10 +43,10 @@ Then,
 to update all the servers
 -> ansible servers -a "sudo apt update"
 
-to see disk space of all servers
+to see the disk space of all servers
 -> ansible servers -a "df -h"
 
-to see uptime of all servers
+to see the uptime of all servers
 -> ansible servers -a "uptime"
 
 
@@ -54,10 +54,8 @@ to see uptime of all servers
 
 
 
-
-
-
-
+to check on which server our production is running by checking the particular inventory
+-> ansible-inventory -i "__your PATH of Inventory file" --list -y 
 
 
 
